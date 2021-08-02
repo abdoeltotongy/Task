@@ -1,0 +1,244 @@
+*{
+    -wibkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0;
+    background-color: #000 !important;    
+}
+.container{
+    background-color: #000;
+    
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: black
+}
+.navbar { position: absolute !important; }
+.m-r{
+    justify-content: flex-end ;
+    height: 100%
+ }
+nav{
+    margin: 0px 25px;
+    color: white;
+    border-left: 5px solid #f09;
+    background-color: black;
+    position: absolute;
+    top: 4%;
+    right: 8%;
+    height: 65px;
+    padding: 0px 15px!important;
+    text-transform: uppercase;
+    z-index: 2
+}
+.navbar-brand{
+    color: white;
+    padding: 
+}
+.navbar-brand span{
+    background-color: #f09;
+    color: #f09;
+    border-radius: 50%;
+    font-size: 22px
+}
+.navbar-brand:hover{
+    color: white
+}
+nav ul {
+    height: inherit
+}
+.nav-item  {
+    margin: 0px 15px;
+    padding: 15px 5px;
+}
+.nav-item.active{
+    background-color: #dadada6b;
+}
+.nav-item:hover{
+    cursor: pointer;
+    background-color: #dadada6b
+}
+/*******************************************************************************/
+/***************************  ONETEL SLIDER ***********************************/
+
+.onetell img{height: 700px}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 35%;
+    left: 39%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.carousel-caption h1{
+    text-align: start;
+    float: right;
+    font-family: sans-serif;
+    font-weight: 800
+}
+
+/*******************************************************************************/
+/***************************  3 CAEDS  ***********************************/
+
+.cards{
+    background-color: black;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    clear: both;
+    justify-content: center;
+    color: white
+}
+.cards .row{justify-content: center}
+.cards .card{
+    margin: 0px 35px;
+    padding: 20px;
+    position: relative;
+    bottom: 50px;    
+}
+.icons{
+    width:  60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 15px;
+    justify-content: center;
+    margin: auto
+}
+/*******************************************************************************/
+/***************************  ABOUT   ***********************************/
+
+.contain{
+    display: inline-block;
+    width: 100%;
+    background-color: #000;
+    min-height: 24%;
+    margin-top: 70px;
+}
+
+.about-img img{
+    width: 49%;
+    float: left
+}
+
+.pragraph{
+    float: right;
+    width: 49%;
+    font-family: Montserrat,sans-serif!important;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #111;
+    height: 360px;
+    padding: 20px
+}
+.pragraph h2{
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.pragraph p{
+    font-size: 18px;
+    color: #777
+}
+.pragraph a{
+    color: white;
+    border: 2px solid #fff;
+    margin-top: 20px;
+}
+.pragraph a:hover{
+    color: aliceblue
+}
+/*******************************************************************************/
+/***************************  GALLARY   ***********************************/
+.gallary{margin-top: 70px ; text-align: center}
+.gallary .title{
+    color: white;
+    margin: auto;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    display: inline;
+    width: 100%
+}
+.lang{
+    margin: 40px auto;
+    font-family: Comic Sans MS;
+    color: #777;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center
+}
+
+.gallary-imgs img{
+    width: 100%;
+    height: 240px;
+    margin: 0
+}
+.gallary-imgs img:hover{
+    opacity: .7;
+    -webkit-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
+}
+.gallary-imgs .col{padding: 1px}
+
+.gallary .btn{
+    color: white;
+    border: 2px solid #fff;
+    margin-top: 20px;
+}
+.gallary .btn:hover{
+    color: beige
+}
+
+.lightbox-target {
+    display: none
+}
+
+
+.last-btn{
+    margin-bottom: 30px
+}
+//**************************************************************************************************************/
+/**********************************         Responsive         *************************************************/
+/***************************************************************************************************************/
+
+
+
+@media (max-width: 575.98px) {
+nav{right: 0}
+button.navbar-toggler{  background-color: #777 }
+.contain{ display: inline; width: 100%; height: auto !important;   }
+.about-img img{  width: 100%; }
+.pragraph{  width: 100%;  height: auto; }
+.pragraph a{ margin-top: 10px; }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+.contain { display: inline-grid !important; width: 100%; height: auto !important;   }
+.about-img img{  width: 100%; }
+.pragraph{  width: 100%;  height: auto !important; }
+.pragraph a{ margin-top: 10px; }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+.contain {
+    display: inline-grid !important; width: 100%; height: auto !important;   }
+.about-img img{  width: 100%; }
+.pragraph{  width: 100%;  height: auto; }
+.pragraph a{ margin-top: 10px; }    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px)  { body{background-color: red !important}}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { body{background-color: antiquewhite !important} }
